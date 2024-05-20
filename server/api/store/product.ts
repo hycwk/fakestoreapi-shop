@@ -1,20 +1,5 @@
-interface ProductAPIResponse {
-  status: number
-  body: Product[] | Product | string
-}
+import { ProductAPIResponse } from "~/types/store";
 
-interface Product {
-	id: number;
-	title: string;
-	price: number;
-	description: string;
-	category: string;
-	image: string;
-	rating: {
-		rate: number;
-		count: number;
-	}
-}
 
 const getProduct: (pid?: string) => Promise<ProductAPIResponse> = async (pid) => {
   const url = typeof pid === 'string' ? `https://fakestoreapi.com/products/${pid}` : 'https://fakestoreapi.com/products';
