@@ -996,7 +996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.11.2":
+"@nuxt/kit@npm:3.11.2, @nuxt/kit@npm:^3.10.3, @nuxt/kit@npm:^3.11.2":
   version: 3.11.2
   resolution: "@nuxt/kit@npm:3.11.2"
   dependencies:
@@ -1116,6 +1116,17 @@ __metadata:
   peerDependencies:
     vue: ^3.3.4
   checksum: 17c28af162d17cdb819195b54e2fe26503e4c3e0b8a825be9b2a755592174d3e157ddf8ce4c3d8b8761d090c2c946d13477e8f59d4b9ee051ec905af641adfc8
+  languageName: node
+  linkType: hard
+
+"@nuxtjs/google-fonts@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@nuxtjs/google-fonts@npm:3.2.0"
+  dependencies:
+    "@nuxt/kit": ^3.10.3
+    google-fonts-helper: ^3.5.0
+    pathe: ^1.1.2
+  checksum: a404ab92b88d3d1c19c54a791fadfb4d4d7e0c43b70345bfa4ff453e1dcce34e5488129c466ea3e6b8d18eafcb1c742239fc7ab6689b790200da98bf88ed3da1
   languageName: node
   linkType: hard
 
@@ -2078,13 +2089,13 @@ __metadata:
   linkType: hard
 
 "@vue/devtools-applet@npm:^7.1.3":
-  version: 7.2.0
-  resolution: "@vue/devtools-applet@npm:7.2.0"
+  version: 7.2.1
+  resolution: "@vue/devtools-applet@npm:7.2.1"
   dependencies:
-    "@vue/devtools-core": ^7.2.0
-    "@vue/devtools-kit": ^7.2.0
-    "@vue/devtools-shared": ^7.2.0
-    "@vue/devtools-ui": ^7.2.0
+    "@vue/devtools-core": ^7.2.1
+    "@vue/devtools-kit": ^7.2.1
+    "@vue/devtools-shared": ^7.2.1
+    "@vue/devtools-ui": ^7.2.1
     lodash-es: ^4.17.21
     perfect-debounce: ^1.0.0
     shiki: 1.5.2
@@ -2092,53 +2103,53 @@ __metadata:
     vue-virtual-scroller: 2.0.0-beta.8
   peerDependencies:
     vue: ^3.0.0
-  checksum: c648f693c98af8b78a9e423f71d749be2e2f5e52ba90a8e4320b4c6b52ba01d20c1e7f17c1a8ec0964511b4afbadf40043553ee3229402b86b98aa1420ac24de
+  checksum: 7efa48a37bb2bb4e72f8bf4af76c7d9a0d7ece30c863432e52abc81148bd3413a5d771fcd4ebdff84ed4119a113bd8b139ef1d63cb87cab12a52d9459d605d28
   languageName: node
   linkType: hard
 
-"@vue/devtools-core@npm:^7.1.3, @vue/devtools-core@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@vue/devtools-core@npm:7.2.0"
+"@vue/devtools-core@npm:^7.1.3, @vue/devtools-core@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "@vue/devtools-core@npm:7.2.1"
   dependencies:
-    "@vue/devtools-kit": ^7.2.0
-    "@vue/devtools-shared": ^7.2.0
+    "@vue/devtools-kit": ^7.2.1
+    "@vue/devtools-shared": ^7.2.1
     mitt: ^3.0.1
     nanoid: ^3.3.4
     pathe: ^1.1.2
     vite-hot-client: ^0.2.3
-  checksum: d5a56e1835c874ba65b2657fafe80075d30705712d8e6468ed130f814d9b37027570df9bf18860233f344b23cce49fd394d1d13fd991deb88cb7f7ffbfd9ad6d
+  checksum: 6800943df6bbff24497091556bd09fe4d7ba1c9d44e4ff21f7eda0bf4b85fd3f4f883a442272cbc1a8ce7124b15b944b3081a03979daf439fa0e535bcd71da75
   languageName: node
   linkType: hard
 
-"@vue/devtools-kit@npm:^7.1.3, @vue/devtools-kit@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@vue/devtools-kit@npm:7.2.0"
+"@vue/devtools-kit@npm:^7.1.3, @vue/devtools-kit@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "@vue/devtools-kit@npm:7.2.1"
   dependencies:
-    "@vue/devtools-shared": ^7.2.0
+    "@vue/devtools-shared": ^7.2.1
     hookable: ^5.5.3
     mitt: ^3.0.1
     perfect-debounce: ^1.0.0
     speakingurl: ^14.0.1
   peerDependencies:
     vue: ^3.0.0
-  checksum: 6b09d324d7eaef422b4a3155d29736bb27169fdfe1e7f0653ad8d1c060cdb37ee4febc637490e676d9f43c55969c1ff8e4a7cf00f948781e61e7f7427cb66df7
+  checksum: 6a98dc06de318d37f2540d61d91b44ef2eda699bd7a452021d7f3eb58d974ba42875fc0d4038c7b2d4078ac9605fc20b5808a03644a20828a8693061aff21194
   languageName: node
   linkType: hard
 
-"@vue/devtools-shared@npm:7.2.0, @vue/devtools-shared@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@vue/devtools-shared@npm:7.2.0"
+"@vue/devtools-shared@npm:7.2.1, @vue/devtools-shared@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "@vue/devtools-shared@npm:7.2.1"
   dependencies:
     rfdc: ^1.3.1
-  checksum: c66aae3d954d867496ea4c70ef879dff45c237af38e603b848bb8543ce8b987b0f88be0d2f0ed721490ea07b355650b5fb70104ccb379e4d2873be15b866786b
+  checksum: 1c492cef490336aa34e541db8735cec23f45be7e34cabe4a808e4868ea27c7f67e192b83a9f5cf8386a0e0c74dec15eef9294a246a423fe834f02f40f1b8ca59
   languageName: node
   linkType: hard
 
-"@vue/devtools-ui@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@vue/devtools-ui@npm:7.2.0"
+"@vue/devtools-ui@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "@vue/devtools-ui@npm:7.2.1"
   dependencies:
-    "@vue/devtools-shared": 7.2.0
+    "@vue/devtools-shared": 7.2.1
     "@vueuse/components": ^10.9.0
     "@vueuse/core": ^10.9.0
     "@vueuse/integrations": ^10.9.0
@@ -2149,7 +2160,7 @@ __metadata:
     floating-vue: ">=2.0.0-0"
     unocss: ">=0.50.0-0"
     vue: ">=3.0.0-0"
-  checksum: 577379fc60bf8f8ac831d68b4d913c96ac0d8e6f821ec3e2a0f9dec1acb1a82200a1ba793e82c65c32bf1c481dc9c2225aa8e899799728739c4b0a720c72a807
+  checksum: 39dba35026b935c5f6b0e661385d9879d3fe0eade49888f6ad53a2be0f3e7837858059fb975e95961c833bd5624c4138f3e9053cafea1a7e8a1c6c2b8478cd9d
   languageName: node
   linkType: hard
 
@@ -3355,7 +3366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:latest":
+daisyui@latest:
   version: 4.11.1
   resolution: "daisyui@npm:4.11.1"
   dependencies:
@@ -3429,7 +3440,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.2.2":
+"deepmerge@npm:^4.2.2, deepmerge@npm:^4.3.1":
   version: 4.3.1
   resolution: "deepmerge@npm:4.3.1"
   checksum: 2024c6a980a1b7128084170c4cf56b0fd58a63f2da1660dcfe977415f27b17dbe5888668b59d0b063753f3220719d5e400b7f113609489c90160bb9a5518d052
@@ -3636,9 +3647,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.773
-  resolution: "electron-to-chromium@npm:1.4.773"
-  checksum: 440cf258b8645c6e1c17c35a52578abc4ddce76139be7b1aa70f98ec199ec42f4ea9d9cfc4f6b9a9155601878801053b9f5fa76e5553009d3bfa08d79406e1de
+  version: 1.4.774
+  resolution: "electron-to-chromium@npm:1.4.774"
+  checksum: 5b68ea2583b406e43dc6cea7511a070adddb1da27c29a50ae721851b4b1f4a54412933a9f1d2d62c35f0bfa5bb56735a1793f4387ea4d3470d59502f5084bff1
   languageName: node
   linkType: hard
 
@@ -4257,6 +4268,18 @@ __metadata:
     slash: ^5.1.0
     unicorn-magic: ^0.1.0
   checksum: 33568444289afb1135ad62d52d5e8412900cec620e3b6ece533afa46d004066f14b97052b643833d7cf4ee03e7fac571430130cde44c333df91a45d313105170
+  languageName: node
+  linkType: hard
+
+"google-fonts-helper@npm:^3.5.0":
+  version: 3.6.0
+  resolution: "google-fonts-helper@npm:3.6.0"
+  dependencies:
+    deepmerge: ^4.3.1
+    hookable: ^5.5.3
+    ofetch: ^1.3.4
+    ufo: ^1.5.3
+  checksum: c188ef503b014e8e0d423ab253688b2e7b600a0e9280ecb54c8e32b3cc6d3123e70df11ec12aca9e4cbd264d91ee4ea3e1b4811ee12d96575e9985ffae69761e
   languageName: node
   linkType: hard
 
@@ -5945,6 +5968,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-app@workspace:."
   dependencies:
+    "@nuxtjs/google-fonts": ^3.2.0
     "@nuxtjs/tailwindcss": ^6.12.0
     daisyui: latest
     nuxt: ^3.11.2
@@ -6145,18 +6169,18 @@ __metadata:
   linkType: hard
 
 "openapi-typescript@npm:^6.7.5":
-  version: 6.7.5
-  resolution: "openapi-typescript@npm:6.7.5"
+  version: 6.7.6
+  resolution: "openapi-typescript@npm:6.7.6"
   dependencies:
     ansi-colors: ^4.1.3
     fast-glob: ^3.3.2
     js-yaml: ^4.1.0
     supports-color: ^9.4.0
-    undici: ^5.28.2
+    undici: ^5.28.4
     yargs-parser: ^21.1.1
   bin:
     openapi-typescript: bin/cli.js
-  checksum: f404cf8e5cdc59a6773cfd9adfd3545159a2d59d7393f97d003d9f8be6a28e0a71cfbb502da66bdd7c38ec2ad92b5b570202aa243bda908fafe31ea130c9f976
+  checksum: 2f46793066ae58541ee5177b650d2aec61989a671e296b37690f60086b5b6c2f8ee2de3e2788cad58b4fd29f04ea876fd256312309fd96a041b3dd299e803282
   languageName: node
   linkType: hard
 
@@ -7990,7 +8014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:^5.28.2":
+"undici@npm:^5.28.4":
   version: 5.28.4
   resolution: "undici@npm:5.28.4"
   dependencies:
