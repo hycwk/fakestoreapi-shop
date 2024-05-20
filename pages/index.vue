@@ -10,11 +10,6 @@
 			<ProductCard 
 				:product="product"
 			/>
-			<NuxtLink :to="'/product/' + product.id">
-				{{  product.id }}
-			</NuxtLink>
-			<!-- <h2>{{ product.title }}</h2>
-			<p>{{ product.description }}</p> -->
 		</div>
 	</div>
 </template>
