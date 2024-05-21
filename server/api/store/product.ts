@@ -1,4 +1,4 @@
-import { ProductAPIResponse } from "~/types/store";
+import { type ProductAPIResponse } from "~/types/store";
 
 
 const getProduct: (pid?: string) => Promise<ProductAPIResponse> = async (pid) => {
