@@ -4,10 +4,10 @@
 		<input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
 		<div class="drawer-content flex flex-col">
 			<div class="w-full flex justify-end py-2">
-				<button class="btn btn-link flex items-center text-sm">
+				<NuxtLink to="/user/login" class="btn btn-link flex items-center text-sm">
 					Account
 					<IconsUser width="16px" height="16px" class="mx-2"/>
-				</button>
+				</NuxtLink>
 				<button class="btn btn-link flex items-center text-sm">
 					Cart
 					<IconsCart width="16px" height="16px" class="mx-2"/>
