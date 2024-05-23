@@ -1,12 +1,21 @@
 <template>
+  <!-- You can open the modal using ID.showModal() method -->
+  <dialog id="my_modal_3" class="modal">
+    <div class="modal-box">
+      <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
+      <UserSignIn />
+    </div>
+  </dialog>
   <div class="drawer">
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <div class="w-full flex justify-end py-2">
-        <NuxtLink to="/user/login" class="btn btn-link flex items-center text-sm">
+        <button class="btn btn-link flex items-center text-sm" onclick="my_modal_3.showModal()">
           Account
           <IconsUser width="16px" height="16px" class="mx-2" />
-        </NuxtLink>
+        </button>
         <button class="btn btn-link flex items-center text-sm">
           Cart
           <IconsCart width="16px" height="16px" class="mx-2" />
@@ -29,6 +38,7 @@
           </ul>
         </div>
       </div>
+      c
       <div class="mx-auto py-10 px-10">
         <slot />
       </div>
