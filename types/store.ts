@@ -1,17 +1,17 @@
 export interface ProductAPIResponse {
-  status: number
-  body: Product[] | Product | string
+  status: number;
+  body: Product[] | Product | string;
 }
 
 export interface Product {
-	id: number;
-	title: string;
-	price: number;
-	description: string;
-	category: string;
-	image: string;
-	rating: {
-		rate: number;
-		count: number;
-	}
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
 }

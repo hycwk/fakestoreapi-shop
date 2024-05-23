@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       '@sidebase/nuxt-auth',
       {
         auth: {
-					globalAppMiddleware: true,
+          globalAppMiddleware: true,
           provider: {
             type: 'local',
           },
@@ -26,10 +26,10 @@ export default defineNuxtConfig({
       },
     ],
   ],
-	// devServer: {
-	// 	https: {
-	// 		key: './server.key',
-	// 		cert: './server.crt'
-	// 	}
-	// },
+  // devServer: {
+  // 	https: {
+  // 		key: './server.key',
+  // 		cert: './server.crt'
+  // 	}
+  // },
 });
