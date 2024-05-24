@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { LAYOUT } from '~/types/store';
+</script>
+
 <template>
   <!-- You can open the modal using ID.showModal() method -->
   <dialog id="my_modal_3" class="modal">
@@ -34,11 +38,10 @@
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal">
             <!-- Navbar menu content here -->
-            <li><NuxtLink to="/">Products</NuxtLink></li>
+            <NavCategory :layout="LAYOUT.HORIZONTAL" />
           </ul>
         </div>
       </div>
-      c
       <div class="mx-auto py-10 px-10">
         <slot />
       </div>
@@ -47,7 +50,7 @@
       <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 min-h-full bg-base-200">
         <!-- Sidebar content here -->
-        <li><NuxtLink to="/">Products</NuxtLink></li>
+        <NavCategory :layout="LAYOUT.VERTICAL" />
       </ul>
     </div>
   </div>

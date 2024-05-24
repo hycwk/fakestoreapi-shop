@@ -15,3 +15,15 @@ export interface Product {
     count: number;
   };
 }
+
+export type CategoryList = string[];
+
+export interface CategoryAPIResponse {
+  status: number;
+  body: CategoryList | string;
+}
+
+export enum LAYOUT {
+  VERTICAL = 'vertical',
+  HORIZONTAL = 'horizontal',
+}
