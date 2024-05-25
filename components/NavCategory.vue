@@ -13,7 +13,7 @@ const buttonClasses = layout === LAYOUT.VERTICAL ? 'btn btn-link w-full' : 'btn 
   <div v-else-if="error">Error: {{ error }}</div>
   <div v-else-if="Array.isArray(data?.body)">
     <div :class="wrapperClasses">
-      <NuxtLink :to="'/store/category/' + item" :class="buttonClasses" v-for="(item, index) in data.body" :key="index">{{ item }}</NuxtLink>
+      <NuxtLink class="capitalize" :to="'/category/' + item" :class="buttonClasses" v-for="(item, index) in data.body" :key="index">{{ item }}</NuxtLink>
     </div>
   </div>
 </template>

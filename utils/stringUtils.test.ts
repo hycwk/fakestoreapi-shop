@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { priceFormat } from '@/server/utils/index';
+import { priceFormat } from '~/utils/stringUtils';
 
 describe('priceFormat', () => {
   test('should format price with 2 decimal places', () => {
