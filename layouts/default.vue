@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { LAYOUT } from '~/types/store';
+const { status, signOut } = useAuth();
+const authStatus = ref(status.value);
 </script>
 
 <template>
@@ -16,10 +18,15 @@ import { LAYOUT } from '~/types/store';
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <div class="w-full flex justify-end py-2">
-        <button class="btn btn-link flex items-center text-sm" onclick="my_modal_3.showModal()">
+        <button v-if="authStatus === 'unauthenticated'" class="btn btn-link flex items-center text-sm" onclick="my_modal_3.showModal()">
           Account
           <IconsUser width="16px" height="16px" class="mx-2" />
         </button>
+        <button v-else @click="signOut({ callbackUrl: '/' })" class="btn btn-link flex items-center text-sm">Sign-out</button>
+        <NuxtLink v-if="authStatus === 'authenticated'" to="/user/profile" class="btn btn-link flex items-center text-sm">
+          Profile
+          <IconsUser width="16px" height="16px" class="mx-2" />
+        </NuxtLink>
         <button class="btn btn-link flex items-center text-sm">
           Cart
           <IconsCart width="16px" height="16px" class="mx-2" />
@@ -33,7 +40,9 @@ import { LAYOUT } from '~/types/store';
           </label>
         </div>
         <div class="flex-1 px-2 mx-2">
-          <IconsLogo />
+          <NuxtLink to="/">
+            <IconsLogo />
+          </NuxtLink>
         </div>
         <div class="flex-none hidden lg:block">
           <ul class="menu menu-horizontal">
