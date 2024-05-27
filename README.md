@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Fake Online Store
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a fake online store built using Nuxt 3, DaisyUI, and TailwindCSS. The store's data is fetched from the Fake Store API (https://fakestoreapi.com/), and authentication is handled through Auth0. This project demonstrates a seamless integration of modern frontend technologies to create a functional and visually appealing e-commerce platform.
 
 ## Setup
 
@@ -71,5 +71,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
